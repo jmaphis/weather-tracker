@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 .headerDark, .headerLight {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 30px;
 }
 
 .darkModeCheck {
@@ -15,16 +17,21 @@
 
 .mainDark, .mainLight {
     box-sizing: border-box;
+    padding: 10vw;
+}
+.weather>p {
+    padding-left: 3.5vw;
 }
 
 .headerDark {
-    background-color: darkblue;
+    background-color: #222244;
     color: blanchedalmond;
 }
 
 .headerLight {
-    background-color: lightgray;
+    background-color: #8888dd;
     color: black;
+    border-color: #222222;
 }
 
 .mainDark {
@@ -35,4 +42,25 @@
 .mainLight {
     background-color: aliceblue;
     color: black;
+}
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.location h3 {
+    padding: 10px;
+}
+
+.zip-code-input {
+    position: absolute;
+    right: 15px;
+    padding-top: 30px;
+    padding-right: 10vw;
+}
+
+form>* {
+    margin: 5px;
 }

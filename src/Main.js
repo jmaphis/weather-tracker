@@ -15,7 +15,9 @@ function Main(props) {
         return{
             location: (
                 data.resolvedAddress.split(", ")
-                ).map(data => <h3>{data}</h3>),
+                ).map(data => 
+                    <div key={data} ><h3>{data}</h3></div>
+                    ),
             tempature: data.currentConditions.temp,
             humidity: data.currentConditions.humidity,
             forecast: data.currentConditions.conditions,
