@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.headerDark, .headerLight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.darkModeCheck {
+    position: absolute;
+    right: 25px;
+}
+
+.mainDark, .mainLight {
+    box-sizing: border-box;
+}
+
+.headerDark {
+    background-color: darkblue;
+    color: blanchedalmond;
+}
+
+.headerLight {
+    background-color: lightgray;
+    color: black;
+}
+
+.mainDark {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.mainLight {
+    background-color: aliceblue;
+    color: black;
+}
