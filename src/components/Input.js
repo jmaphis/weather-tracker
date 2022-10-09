@@ -1,7 +1,7 @@
 import React from "react";
 
 function Input(props) {
-  const [formData, setFormData] = React.useState("")`   `;
+  const [formData, setFormData] = React.useState("");
   function handleSubmit(event) {
     event.preventDefault();
     props.setZipCode(formData);
