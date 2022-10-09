@@ -3,18 +3,13 @@ import Header from "./Header";
 import Main from "./Main";
 
 function App() {
-
-  const [darkMode, setDarkMode] = React.useState(false);
+  const startMode = localStorage.getItem("zipMode");
+  const [darkMode, setDarkMode] = React.useState(startMode === "dark");
 
   return (
     <div className="App">
-      <Header 
-        setDarkMode={setDarkMode}
-        darkMode={darkMode}
-      />
-      <Main 
-        darkMode={darkMode} 
-      />
+      <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+      <Main darkMode={darkMode} />
     </div>
   );
 }
