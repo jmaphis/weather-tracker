@@ -43,6 +43,7 @@ function Main(props) {
     <div className={props.darkMode ? "mainDark" : "mainLight"}>
       <Input setZipCode={setZipCode} />
       {zipCode ? <Data weather={weather} /> : <EmptyCard />}
+      <div className={props.darkMode ? "backgroundDark" : "backgroundLight"} ></div>
     </div>
   );
 }

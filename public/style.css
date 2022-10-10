@@ -3,6 +3,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  scroll-behavior: auto;
 }
 
 input::-webkit-outer-spin-button,
@@ -39,7 +40,6 @@ button {
   position: absolute;
   scale: 300%;
   opacity: 50%;
-  top: 60vh;
 }
 
 .mainDark,
@@ -47,8 +47,12 @@ button {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 9.25vh 25vw 50vh;
-  size: 100%;
+  padding: 9.25vh 25vw 0;
+}
+
+.backgroundDark, .backgroundLight {
+  height: 100vh;position: fixed;
+  width: 100vw;
   scroll-behavior: auto;
 }
 
@@ -59,7 +63,7 @@ button {
   height: 20vh;
   position: sticky;
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .darkModeCheck {
@@ -89,16 +93,28 @@ button {
   border: 5px solid #222288;
 }
 
-.mainDark {
+.backgroundDark {
   background-color: #111166;
-  color: blanchedalmond;
   border: 5px solid black;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.backgroundLight {
+  background-color: aliceblue;
+  border: 5px solid #222288;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.mainDark {
+  color: blanchedalmond;
 }
 
 .mainLight {
-  background-color: aliceblue;
   color: black;
-  border: 5px solid #222288;
 }
 
 .location {
@@ -117,6 +133,7 @@ button {
 }
 
 .dataCard {
+  position: relative;
   border: 5px solid black;
   border-radius: 15px;
   padding: 25px;
@@ -152,7 +169,11 @@ form > * {
   .mainLight {
     display: flex;
     flex-direction: column;
-    padding: 10vh 10vw 10vh;
+    padding: 3vh 5vw 3vh;
+  }
+
+  .dataCard {
+    padding: 5px;
   }
 
   .weatherIcon {

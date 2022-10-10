@@ -9,7 +9,6 @@ function Header(props) {
       localStorage.setItem("zipMode", "light");
     }
     props.setDarkMode((prevMode) => !prevMode);
-    console.log(props.darkMode);
   }
 
   return (

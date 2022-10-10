@@ -3,7 +3,15 @@ import Header from "./Header";
 import Main from "./Main";
 
 function App() {
-  const startMode = localStorage.getItem("zipMode");
+  var startMode = localStorage.getItem("zipMode");
+  if (!startMode) {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      startMode = "dark";
+    }
+  }
   const [darkMode, setDarkMode] = React.useState(startMode === "dark");
 
   return (
