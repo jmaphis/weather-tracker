@@ -172,6 +172,10 @@ form > * {
     padding: 3vh 5vw 3vh;
   }
 
+  .weatherIcon {
+    top: 10%;
+  }
+
   .dataCard {
     padding: 5px;
   }
