@@ -6,7 +6,7 @@ Weather Tracker is a minimalistic weather app by James Maphis, powered by the [V
 
 ## How to use
 
-To use the app, simply visit [url here](url.here), and enter the zip code you would like to get the weather for. Initially, Weather Tracker will detect your browser's dark mode settings, but you can manually change between dark and light mode using the chack box in the upper right hand corner.
+To use the app, simply visit [https://maphis-weather.netlify.app/](https://maphis-weather.netlify.app/), and enter the zip code you would like to get the weather for. Initially, Weather Tracker will detect your browser's dark mode settings, but you can manually change between dark and light mode using the chack box in the upper right hand corner.
 
 To work with the code, simply clone the repository, then navigate to the containing folder, and run the following:
 
