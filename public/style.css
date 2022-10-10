@@ -186,7 +186,7 @@ form > * {
   .headerLight {
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 8rem;
   }
 
   .darkModeCheck {
