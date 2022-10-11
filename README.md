@@ -1,6 +1,6 @@
 # [Weather Tracker](https://maphis-weather.netlify.app/)
 
-https://img.shields.io/badge/build-passing-success
+![passing](https://img.shields.io/badge/build-passing-success)
 
 ## About
 
