@@ -1,5 +1,4 @@
 # Weather Tracker
-[weather](https://github.com/jmaphis/weather-tracker/actions/workflows/index.html/badge.svg)
 
 ## About
 
