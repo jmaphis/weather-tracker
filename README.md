@@ -1,5 +1,6 @@
 # Weather Tracker
-https://github.com/jmaphis/weather-tracker/actions/workflows/index.html/badge.svg
+[weather](https://github.com/jmaphis/weather-tracker/actions/workflows/index.html/badge.svg)
+
 ## About
 
 Weather Tracker is a minimalistic weather app by James Maphis, powered by the [Visual Crossing](https://www.visualcrossing.com/) weather API. 
